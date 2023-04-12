@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Subject"
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="OOP"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:id="@+id/cbOOP"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DSU"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:id="@+id/cbDSU"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DBMS"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:id="@+id/cbDBMS"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OSY"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:id="@+id/cbOSY"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JAVA"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:id="@+id/cbJAVA"/>
+</LinearLayout>

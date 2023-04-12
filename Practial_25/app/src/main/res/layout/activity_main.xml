@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_x="100dp"
+        android:layout_y="170dp"
+        android:contentDescription="anim image"
+        android:id="@+id/imgAnim"
+        android:src="@drawable/imgae"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_y="580dp"
+        android:gravity="center">
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnScale"
+            android:layout_marginRight="5dp"
+            android:text="Scale Anim"
+            />
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTranslate"
+            android:layout_marginLeft="5dp"
+            android:text="Translate Anim"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_y="650dp"
+        android:gravity="center">
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRotate"
+            android:layout_marginRight="5dp"
+            android:text="Rotate Anim"
+            />
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAlpha"
+            android:layout_marginLeft="5dp"
+            android:text="Alpha Anim"
+            />
+
+    </LinearLayout>
+
+</AbsoluteLayout>

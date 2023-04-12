@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frame Layout"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\t\tFramelayout is a ViewGroup subclass that is used to specify the position of View instances it contains on the top of each other to display only single View inside the FrameLayout"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Button in FrameLayout"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Table Layout"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:weightSum="1">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:text="Button 1"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:layout_marginLeft="2dp"
+                android:text="Button1"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:layout_marginLeft="2dp"
+                android:text="Button1"/>
+        </TableRow>
+        <TableRow
+            android:weightSum="1">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:text="Button 1"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:layout_marginLeft="2dp"
+                android:text="Button1"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:layout_marginLeft="2dp"
+                android:text="Button1"/>
+        </TableRow>
+        <TableRow
+            android:weightSum="1">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:text="Button 1"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:layout_marginLeft="2dp"
+                android:text="Button1"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:layout_marginLeft="2dp"
+                android:text="Button1"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnButton1"
+            android:text="button 1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button 2"
+            android:id="@+id/btnButton2"
+            android:layout_below="@id/btnButton1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button 3"
+            android:id="@+id/btnButton3"
+            android:layout_toRightOf="@id/btnButton2"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

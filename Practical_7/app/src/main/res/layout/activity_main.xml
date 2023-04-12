@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Studnet Information"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtName"
+        android:hint="Enter your name"
+        android:inputType="text"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtRoll"
+        android:hint="Enter your Roll Number"
+        android:inputType="number"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtPhone"
+        android:hint="Enter your Phone number"
+        android:inputType="phone"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtAge"
+        android:hint="Enter your Age"
+        android:inputType="number"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtClass"
+        android:hint="Enter your Class"
+        android:inputType="text"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Data"
+        android:id="@+id/btnSaveData"/>
+
+
+</LinearLayout>
