@@ -61,7 +61,6 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
         else{
             holder.tvName.setText(String.format(Locale.US,"Cart Order No "+position));
             holder.recyclerView.setAdapter(new OrderHistoryAdapter(context,orderHistories.get(position).getBuyModels()));
-            holder.recyclerView.smoothScrollToPosition(orderHistories.get(position).getBuyModels().size()-1);
         }
 
     }
