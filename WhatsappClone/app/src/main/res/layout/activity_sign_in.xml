@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/grayBackground"
+    android:gravity="center_horizontal"
+    tools:context=".SignInActivity">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/whatsapp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:hint="Email"
+        android:id="@+id/edtEmail"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="Password"
+        android:paddingLeft="10dp"
+        android:id="@+id/edtPassword"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click for SignUp"
+        android:layout_marginStart="110dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:id="@+id/tvClickSignUp"/>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:text="sign in"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnSignIn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="Google"
+            android:id="@+id/btnGoogle"
+            android:drawableLeft="@drawable/google"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"/>
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="Facebook"
+            android:id="@+id/btnFacebook"
+            android:drawableLeft="@drawable/facebook"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/fb_color"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up with Phone"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/signUpWithPhone"/>
+
+</LinearLayout>

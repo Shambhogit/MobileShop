@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/login_shape_bk" />
+
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="200dp"
+            android:id="@+id/tvAnim"
+            android:background="@drawable/ic_login_bk" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="RITP\nEDUCATION"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="410dp"
+            android:layout_height="550dp"
+            android:layout_marginTop="140dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="SIGNUP"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="32dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Email ID"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="15sp" />
+
+
+                <EditText
+                    android:layout_width="310dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:backgroundTint="@color/primaryTextColor"
+                    android:id="@+id/edtEmailId"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:hint="example@email.com"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Username"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="15sp" />
+
+
+                <EditText
+                    android:layout_width="310dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:backgroundTint="@color/primaryTextColor"
+                    android:id="@+id/edtUserName"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:hint="example@12332"
+                    android:inputType="text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Password"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="310dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/primaryTextColor"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:hint="********"
+                    android:inputType="textPassword"
+                    android:id="@+id/edtPassword"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Hobby"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="15sp" />
+
+
+                <EditText
+                    android:layout_width="310dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:backgroundTint="@color/primaryTextColor"
+                    android:id="@+id/edtHobby"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:hint="chess / polo / carrom"
+                    android:inputType="text"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_button"
+                    android:text="Create"
+                    android:id="@+id/btnCreate"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+</LinearLayout>

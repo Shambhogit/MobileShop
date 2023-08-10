@@ -13,26 +13,25 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Button btnEn;
-    BluetoothAdapter btAdapter = BluetoothAdapter.getDefaultAdapter();
+    BluetoothAdapter btAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         btnEn = findViewById(R.id.btnEn);
+        btAdapter = BluetoothAdapter.getDefaultAdapter();
+
+        if(btAdapter == null){
+            Toast.makeText(MainActivity.this, "Bluetooth is not supported ", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Toast.makeText(MainActivity.this, "Bluetooth is supported", Toast.LENGTH_SHORT).show();
+        }
 
         btnEn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
 
-                if(btAdapter.isEnabled()){
-                    Toast.makeText(MainActivity.this, "BlueTooth is already Enable", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    ActivityCompat.requestPermissions(MainActivity.this,new String[]{BLUETOOTH_SERVICE},1);
-                    Intent newIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-                    startActivity(newIntent);
-
-                }
             }
         });
     }

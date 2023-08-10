@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    tools:context=".EditDataActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/ivImage"
+        android:src="@drawable/add_xml"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtName"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:hint="Name of Phone"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtPrice"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:hint="Price of Phone"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:id="@+id/edtRamRom"
+        android:hint="RAM | ROM of Phone"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:id="@+id/edtProcessor"
+        android:hint="Processor of Phone"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtCamera"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:hint="Camera of Phone"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtDisplay"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:hint="Display of Phone"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtBattery"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:hint="Battery capacity of Phone"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edtWarranty"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:hint="Warranty of Phone"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Update Data"
+        android:id="@+id/btnUploadData"/>
+
+</LinearLayout>

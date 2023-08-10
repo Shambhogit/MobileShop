@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Image From ?"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        android:id="@+id/btnGallery"
+        android:drawableLeft="@drawable/gallery"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:id="@+id/btnCamera"
+        android:drawableLeft="@drawable/camera"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/btnCancle"
+        android:drawableLeft="@drawable/cancle_"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:mode="same_level"
+    app:dragEdge="left">
+
+    <!-- Your secondary layout here -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <!-- Your main layout here -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
