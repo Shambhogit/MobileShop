@@ -29,7 +29,7 @@ public class PlayMusic extends AppCompatActivity {
 
     Handler handler;
 
-    SeekBar sbProgress;
+
     LottieAnimationView lottieAnimationView;
     ImageButton btnStart, btnNext, btnBefore;
 
@@ -55,7 +55,7 @@ public class PlayMusic extends AppCompatActivity {
         btnStart = findViewById(R.id.btnStart);
         btnNext = findViewById(R.id.btnNext);
         btnBefore = findViewById(R.id.btnBefore);
-        sbProgress = findViewById(R.id.sbProgress);
+
         handler = new Handler();
 
         lottieAnimationView = findViewById(R.id.lav);
